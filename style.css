@@ -1,0 +1,46 @@
+/* 
+	STYLE.CSS:
+	One stylesheet to rule them all.
+	
+	selector { property:value }
+	
+*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* Structure */
+
+body {
+  background-color: skyblue;
+  margin: 0;
+}
+
+/* Layout */
+header{
+    text-align: center;
+}
+
+img {
+    max-width: 1000px;
+    max-height: 500px;
+}
+
+footer {
+    text-align: center;
+}
+.hero {
+    background-image: url(images/projectshift-40.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: rgb(179, 15, 15);
+}
+/* Type */
+h1, h2, h3, p, li, div {
+    font-family: 'Oswald';
+}
+
+/* Spacers */
+.gap-footer {
+    height: 10px;
+    width: auto;
+}
