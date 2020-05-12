@@ -35,7 +35,7 @@ footer {
     color: rgb(179, 15, 15);
 }
 /* Type */
-h1, h2, h3, p, li, div {
+h1, h2, h3, h4, p, li, div {
     font-family: 'Oswald';
 }
 
