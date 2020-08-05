@@ -7,16 +7,24 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-/* Structure */
+/* General Styles */
 
 body {
-  background-color: skyblue;
-  margin: 0;
+    background-color: skyblue;
+    margin: 0;
 }
 
-/* Layout */
-header{
+header {
     text-align: center;
+}
+
+.logo {
+    font-size: 72px;
+    color: black;
+    text-align: center;
+    letter-spacing: -3;
+    margin: 0;
+    padding: 20px 0 0 0;
 }
 
 img {
@@ -27,6 +35,7 @@ img {
 footer {
     text-align: center;
 }
+
 .hero {
     background-image: url(images/projectshift-40.jpg);
     background-repeat: no-repeat;
@@ -34,9 +43,103 @@ footer {
     background-size: cover;
     color: rgb(179, 15, 15);
 }
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+
+/* Navigation */
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+    color: #140505;
+}
+
+@media all and (min-width: 700px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: 14px 0 14px 20px;
+        padding-top: 0;
+        font-size: 42px;
+    }
+
+    header nav {
+        margin-top: 14px;
+    }
+}
+
 /* Type */
-h1, h2, h3, h4, p, li, div {
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+div {
     font-family: 'Oswald';
+}
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+    section {
+        padding: 0 10%;
+    }
+
+    .group {
+        flex-direction: row;
+    }
+}
+
+/* Contact Form Design */
+
+form {
+    padding-right: 8px;
+    /* Fixed small sizing issue on the right */
+}
+
+form label {
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    height: 160px;
 }
 
 /* Spacers */
